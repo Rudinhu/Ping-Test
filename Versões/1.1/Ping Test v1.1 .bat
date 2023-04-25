@@ -16,7 +16,7 @@ cls
 ::inicio do primeiro menu:
 
 echo.
-echo Digite a opcao de qual relogio de ponto deseja pingar:
+echo Digite a opcao de qual maquina deseja pingar:
 	echo.
 	echo Tabu
 	echo.
@@ -27,7 +27,7 @@ echo Digite a opcao de qual relogio de ponto deseja pingar:
 	echo [5] final do ip .87
 	echo [6] final do ip .88
 	echo [7] final do ip .89
-	echo [8] relogio reserva
+	echo [8] maquina reserva
 	echo.
 	echo Recife
 	echo.
@@ -58,64 +58,58 @@ if "%opcao%" == "11" goto op11
 
 :op1
 cls
-ping 192.168.10.81
+ping 192.168.0.81
 goto fim
 
 :op2
 cls
-ping 192.168.10.82
+ping 192.168.0.82
 goto fim
 
 :op3
 cls
-ping 192.168.10.83
+ping 192.168.0.83
 goto fim
 
 :op4
 cls
-ping 192.168.10.84
+ping 192.168.0.84
 goto fim
 
 :op5
 cls
-ping 192.168.10.87
+ping 192.168.0.87
 goto fim
 
 :op6
 cls
-ping 192.168.10.88
+ping 192.168.0.88
 goto fim
 
 :op7
 cls
-ping 192.168.10.89
+ping 192.168.0.89
 goto fim
 
 :op8
 cls
 echo. 
-echo. 
-echo.
-echo.
-echo.
-echo.
-echo.
 echo Nao tenho essa informacao, nao se sabe qual o IP dessa maquina
 goto fim
 
 :op9
 cls
-ping 192.168.20.36
+ping 192.168.0.36
 goto fim
 
 :op10
 cls
-ping 192.168.20.37
+ping 192.168.0.37
 goto fim
 
 :op11
 cls
-ping 192.168.20.38
+ping 192.168.0.38
 goto fim
 
 :fim
@@ -125,6 +119,7 @@ echo.
 echo.
 echo.
 echo.
+
 pause
 cls
 echo.
@@ -144,7 +139,6 @@ if "%opcao2%" == "3" goto op24
 goto menu
 
 ::op23 (tentar fazer funcionar na próxima versão)
-
 
 :op24
 exit
